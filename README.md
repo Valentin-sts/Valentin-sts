@@ -14,7 +14,7 @@ Here are some of the skills I've developed:
 - Systems and networks :** Linux, Windows Server
 - Tools:** Pack Office, Proxmox, 
 
-Translated with DeepL.com (free version)
+
 
 ## Contact
 
