@@ -1,0 +1,96 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('docs/assets/images/imagedefond.png'); /* Chemin relatif correct */
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* L'image est centrée */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+}
+
+/* Couleur des titres */
+h1, h2, h3, h4, h5, h6 {
+    color: white; /* Les titres seront en blanc */
+    text-align: center; /* Centrer les titres */
+    margin: 20px 0; /* Ajouter un espacement autour des titres */
+}
+
+/* Style du menu de navigation */
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto; /* Ajouter un peu d'espace autour de la barre de navigation */
+    width: 80%; /* Limiter la largeur de la barre de navigation à 80% de la largeur de l'écran */
+    background-color: rgba(0, 0, 0, 0.7); /* Un fond plus transparent et subtile */
+    border-radius: 8px; /* Coins arrondis pour une meilleure esthétique */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre subtile autour de la barre */
+}
+
+.nav-menu > .nav-item {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px; /* Espacement horizontal entre les éléments du menu */
+}
+
+.nav-item > a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    border-radius: 5px; /* Coins arrondis pour les éléments de menu */
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav-item > a:hover {
+    background-color: #555;
+}
+
+/* Sous-menus (dropdown) */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    padding: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown li {
+    display: block;
+    margin: 5px 0;
+}
+
+.dropdown li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #444;
+    display: block;
+    border-radius: 3px;
+}
+
+.dropdown li a:hover {
+    background-color: #666;
+}
+
+/* Affichage du sous-menu au survol */
+.nav-item:hover > .dropdown {
+    display: block;
+}
+
+/* Espace entre les items */
+.nav-item + .nav-item {
+    margin-top: 20px;
+}
+
+/* Amélioration des sous-menus */
+.nav-item > a {
+    padding: 14px 20px;
+}
